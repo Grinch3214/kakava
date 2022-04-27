@@ -1,0 +1,118 @@
+.taste {
+	background: url('@img/section_3.png') no-repeat, $base-color;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@media screen and (min-width: 768px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@media screen and (min-width: 992px) {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		@media screen and (min-width: 576px) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__flex {
+		display: flex;
+		flex-wrap: wrap;
+		@media screen and (min-width: 576px) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		flex: 1 1 100%;
+		@media screen and (min-width: 576px) {
+			flex: 1 1 50%;
+		}
+	}
+
+	&__image-item {
+		max-width: 260px;
+		margin: auto;
+		@media screen and (min-width: 576px) {
+			max-width: 400px;
+			margin: 0 20px 0 0;
+		}
+		@media screen and (min-width: 992px) {
+			max-width: 460px;
+		}
+		img {
+			width: 100%;
+			margin-top: 0px;
+			@media screen and (min-width: 576px) {
+				margin-top: -30px;
+			}
+		}
+	}
+
+	&__contain {
+		margin-top: 20px;
+		width: 100%;
+		flex: 1 1 100%;
+		@media screen and (min-width: 576px) {
+			margin-top: 80px;
+			flex: 1 1 50%;
+		}
+	}
+
+	&__list {
+		color: #fff;
+		position: relative;
+		padding-left: 20px;
+		font-size: 14px;
+		margin-bottom: 10px;
+		@media screen and (min-width: 576px) {
+			margin-bottom: 0px;
+		}
+		@media screen and (min-width: 768px) {
+			font-size: 16px;
+		}
+		@media screen and (min-width: 992px) {
+			font-size: 18px;
+		}
+		&:nth-child(2) {
+			margin-left: 50px;
+			@media screen and (min-width: 768px) {
+				margin-left: 90px;
+			}
+		}
+		&:nth-child(3) {
+			margin-left: 100px;
+			@media screen and (min-width: 768px) {
+				margin-left: 180px;
+			}
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 2px;
+			height: 100%;
+			background-color: #b1416b;
+		}
+	}
+
+	&__list-item {
+	}
+
+	&__btn {
+		text-align: right;
+		margin-top: 20px;
+		@media screen and (min-width: 576px) {
+			margin-top: 50px;
+		}
+		button {
+			width: auto;
+			margin-left: auto;
+		}
+	}
+}

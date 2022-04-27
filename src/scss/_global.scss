@@ -1,0 +1,67 @@
+html, body {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	line-height: 1.2;
+}
+
+$base-color: linear-gradient(89.0deg, #494949 0%, #a08f7b 99%);
+$second-color: #494949;
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1140px;
+	@media screen and (max-width: 991px) {
+		max-width: 960px;
+	}
+	@media screen and (max-width: 767px) {
+		max-width: 720px;
+	}
+	@media screen and (max-width: 575px) {
+		max-width: 540px;
+	}
+}
+
+.main-btn {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #b1416b;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 14px;
+	padding: 9px 11px;
+	line-height: 1.2;
+	transition: all 0.2s ease;
+	&:hover {
+		box-shadow: 0px 0px 8px 0.1px #fff;
+	}
+	@media screen and (min-width: 640px) {
+		display: inline-block;
+		width: auto;
+	}
+	@media screen and (min-width: 992px) {
+		font-size: 18px;
+	}
+}
+
+.main-title {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	font-size: 24px;
+	color: #fffefe;
+	text-align: center;
+	@media screen and (min-width: 768px) {
+		font-size: 26px;
+	}
+	@media screen and (min-width: 992px) {
+		font-size: 30px;
+	}
+}

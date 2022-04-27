@@ -1,0 +1,92 @@
+.order {
+	background: url('@img/section_6.png') no-repeat, $second-color;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@media screen and (min-width: 768px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@media screen and (min-width: 992px) {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+		@media screen and (min-width: 768px) {
+			margin-bottom: 75px;
+		}
+	}
+
+	&__content {
+		max-width: 640px;
+		margin: 0 auto;
+		display: flex;
+	}
+
+	&__left {
+		width: 100%;
+		flex: 1 1 50%;
+		display: none;
+		@media screen and (min-width: 576px) {
+			display: block;
+		}
+	}
+
+	&__image {
+		max-width: 285px;
+		border-radius: 30px;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__right {
+		margin-left: 0px;
+		display: flex;
+		flex: 1 1 100%;
+		align-items: center;
+		justify-content: center;
+		@media screen and (min-width: 576px) {
+			margin-left: 65px;
+			flex: 1 1 50%;
+			justify-content: stretch;
+		}
+	}
+
+	&__form {
+		max-width: 260px;
+		width: 100%;
+		@media screen and (min-width: 576px) {
+			max-width: none;
+		}
+		input[type="submit"] {
+			margin-top: 40px;
+			width: 100%;
+		}
+	}
+
+	&__input {
+		span {
+			font-size: 12px;
+			color: #ff0101;
+			display: none;
+		}
+		input {
+			width: 100%;
+			padding-left: 10px;
+			background: transparent;
+			color: #fff;
+			height: 40px;
+			border-bottom: 1px solid #8e3457;
+			&::placeholder {
+				color: #fff;
+				opacity: 0.6;
+			}
+			&:focus {
+				border-bottom: 1px solid #fff;
+			}
+		}
+	}
+}

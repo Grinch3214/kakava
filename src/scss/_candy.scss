@@ -1,0 +1,117 @@
+.candy {
+	padding-top: 85px;
+	padding-bottom: 40px;
+	background: url('@img/section_1.png') 24% no-repeat, $base-color;
+	@media screen and (min-width: 640px) {
+		padding-top: 115px;
+		padding-bottom: 105px;
+	}
+	
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__head {
+		color: #fff;
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		justify-content: center;
+		@media screen and (min-width: 640px) {
+			flex-direction: column;
+			margin: 0;
+		}
+	}
+
+	&__box {
+		padding-left: 0px;
+		position: relative;
+		&::before {
+			content: '';
+			width: 0;
+			height: 0;
+		}
+		@media screen and (min-width: 640px) {
+			padding-left: 20px;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 2px;
+				background: #b1416b;
+			}
+		}
+	}
+
+	&__header {
+		font-family: 'Amatic SC', cursive;
+		font-size: 38px;
+		margin-bottom: 18px;
+		@media screen and (min-width: 992px) {
+			font-size: 72px;
+			margin-bottom: 47px;
+		}
+		@media screen and (min-width: 768px) {
+			font-size: 54px;
+		}
+	}
+
+	&__txt {
+		margin-bottom: 18px;
+		font-size: 14px;
+		@media screen and (min-width: 992px) {
+			margin-bottom: 48px;
+			font-size: 18px;
+		}
+	}
+
+	&__photo {
+		position: relative;
+		display: none;
+		@media screen and (min-width: 640px) {
+			display: block;
+		}
+	}
+
+	&__photo-left {
+		border-radius: 30px;
+		max-width: 160px;
+		min-height: auto;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		bottom: -35px;
+		@media screen and (min-width: 768px) {
+			max-width: 200px;
+		}
+		@media screen and (min-width: 992px) {
+			max-width: 255px;
+			left: 65px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+
+	&__photo-right {
+		max-width: 220px;
+		min-height: auto;
+		border-radius: 30px;
+		margin-left: 90px;
+		overflow: hidden;
+		@media screen and (min-width: 768px) {
+			max-width: 280px;
+			margin-left: 130px;
+		}
+		@media screen and (min-width: 992px) {
+			margin-left: 255px;
+			max-width: 350px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}
