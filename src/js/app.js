@@ -47,7 +47,9 @@ flsFunctions.isWebp();
 				elements.formPhone.nextElementSibling.style.display = 'none';
 				alert(
 					`Your name: ${elements.formName.value}\nYour phone: ${elements.formPhone.value}`
-					)
+					);
+				elements.formName.value = '';
+				elements.formPhone.value = '';
 			}
 		}
 	})
