@@ -1,4 +1,4 @@
-# gulp 2022
+# Kakava landing
 
 ### node version 
 *v16.14.2*
@@ -17,3 +17,5 @@
 ## Start deploy ZIP
 
 ```npm run zip```
+
+## Design by Alina Sidorenko
